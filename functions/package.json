@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "firebase": "^10.12.2",
+    "hamburgers": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.3.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

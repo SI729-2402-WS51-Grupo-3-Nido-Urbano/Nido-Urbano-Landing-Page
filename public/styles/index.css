@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+--primary-color: #EE7B10;
+--black-one-color: #000000;
+--black-two-color: #2B2B2B;
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+
+}
+
+
+.logo {
+    user-select: none;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+}
+
+header nav {
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+    gap: 34px;
+    align-items: center;
+}
+
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.underline-link {
+    text-decoration-color: white;
+}
+
+.access-button {
+    display: inline-block;
+    background-color: var(--black-one-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--black-one-color);
+    transition: background-color 0.3s ease;
+}
+
+.access-button:hover {
+    color: var(--primary-color);
+    background-color: var(--black-two-color);
+}
+
+
+.menu-button {
+    display: none;
+}
+
+#hero-section {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('/public/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    position: relative;
+}
+
+.hero-text-content {
+    color: #ffff;
+    padding-left: 20px;
+}
+
+.hero-text-content p {
+    font-size: 21px;
+}
+
+
+.hero-text-content .text-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.hero-text-content h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    font-size: 48px;
+}
+
+.hero-text-content .text-description {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+
+
+#properties-section {
+    background-color: #ebe7f3;
+}
+
+.properties-title-container>*:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.properties-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.properties-title-container {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.properties-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 10px;
+    gap: 30px;
+}
+
+.property {
+    flex: 0 0 auto;
+    width: 300px;
+    background-color: #ebe7f3;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.property:hover {
+    transform: scale(1.05);
+}
+
+.property h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--black-one-color);
+    margin: 10px 5px;
+
+}
+
+.property img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.property-details ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.property-details ul li {
+    text-align: center;
+    padding: 10px 5px;
+    margin: 0 2px;
+    width: 33.33%;
+}
+
+.property-details ul li:first-child {
+    border-right: none;
+}
+
+.property-details p,
+.property-price p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.property-price {
+    border-top: 1px solid #EE7B10;
+    width: 80%;
+    margin: auto;
+}
+.property-price .value {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+
+
+.info-property {
+    color: #EE7B10;
+    font-weight: 500;
+}
+
+.button-view-details {
+    margin: 10px;
+}
+
+.button-view-details button {
+    background-color: var(--black-one-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.button-view-details button:hover {
+    background-color: var(--black-two-color);
+    color: var(--primary-color);
+}
+
+
+#property-type-section {
+    background-color: #ebe7f3;
+}
+
+.property-type-text>*:first-child {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.property-type-container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 6%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.property-type-text h1,
+.property-type-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.property-type-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.property-type-item {
+    flex: 0 0 auto;
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.property-type-item:hover {
+    transform: scale(1.05);
+}
+
+.property-type-item img {
+    margin: 20px 0;
+    width: 40%;
+    height: 100px;
+    border: #EE7B10 3px solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.property-type-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.property-type-item button {
+    background-color: #ffffff;
+    color: #EE7B10;
+    border: #EE7B10 2px solid;
+    padding: 10px 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.property-type-item button:hover {
+    background-color: var(--black-two-color);
+}
+
+.property-type-text {
+    width: 37%;
+}
+
+.property-type-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.9rem;
+    color: #EE7B10;
+}
+
+.property-type-text p {
+    font-family: 'Poppins', sans-serif;
+    color: #303030;
+    font-size: 1.1rem;
+}
+
+#locations-section {
+    background-color: var(--black-two-color);
+}
+
+.locations-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+
+.location-title-content {
+    text-align: center;
+    padding: 2px 0;
+    color: #ffff;
+    font-size: 2rem;
+}
+
+.location-title-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.locations-items-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 50px;
+    grid-template-areas:
+        "lima arequipa"
+        "piura cusco"
+}
+
+.location-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.location-item:hover {
+    transform: scale(1.025);
+    /* Hacer que la tarjeta se agrande un 2.5% cuando se pasa el cursor sobre ella */
+}
+
+.location-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.item-text-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.item-text-content h3 {
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.item-text-content button {
+    color: #EE7B10;
+    background-color: #ebe7f3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: start;
+    padding-left: 20px;
+    width: 150px;
+    height: 32px;
+    border: #ffff 2px solid;
+}
+
+.item-text-content button:hover {
+    background-color: #ffff;
+}
+
+#lima {
+    background-image: url("https://cdn.getyourguide.com/img/location/54b40793cd6af.jpeg/88.jpg");
+    grid-area: lima;
+}
+
+#piura {
+    background-image: url("https://th.bing.com/th/id/R.bcb69cf6f4341fceef9cb825404a6018?rik=lSos%2bJBiem31pA&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f5%2f50%2fPiura_Plaza_de_Armas.jpg&ehk=0NMYLpzAxfgkN7mvkp0tZmZIHD28yQEKx3cdVpJF5zs%3d&risl=&pid=ImgRaw&r=0");
+    grid-area: piura;
+}
+
+#cusco {
+    background-image: url("https://www.civitatis.com/f/peru/cusco/autobus-fiesta-cusco-589x392.jpg");
+    grid-area: cusco;
+}
+
+#arequipa {
+    background-image: url("https://media.vogue.mx/photos/5e5c4a5b25623100081c4370/16:9/w_1280,c_limit/Arequipa--paisaje.jpg");
+    grid-area: arequipa;
+}
+
+
+#team-section {
+    background-color: #ebe7f3;
+}
+
+.team-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-text-content {
+    padding: 20px;
+}
+
+.team-text-content,
+.team-image-content {
+    width: 50%;
+}
+
+.team-image-content {
+    margin: 20px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-image-content iframe {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.team-text-content h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.9rem;
+    color: #EE7B10;
+}
+
+.team-text-content p {
+    font-family: 'Poppins', sans-serif;
+    color: #303030;
+    font-size: 1rem;
+}
+
+.team-text-content button {
+    background-color: var(--black-one-color);
+    color: white;
+    border: none;
+    padding: 9px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.team-text-content button:hover {
+    background-color: var(--black-two-color);
+    color: var(--primary-color);
+}
+
+/*
+#data-section {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://farm5.staticflickr.com/4520/38848167192_88693dc009_h.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.data-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.data-text-content {
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 40px;
+}
+
+.data-text-content h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+.data-cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.data-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.data-card:hover {
+    transform: scale(1.05);
+}
+
+.data-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #000195;
+    margin: 10px 5px;
+}
+
+.data-card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1b1b1b;
+    margin: 10px 5px;
+}
+*/
+
+/*
+#comments-section {
+    background-color: #ebe7f3;
+}
+
+.comments-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.comments-title {
+    padding: 2px 0;
+    color: #EE7B10;
+    font-size: 2rem;
+}
+
+.comments-title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 10px
+}
+
+.comment-card ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    gap: 50px;
+}
+
+.comment-card ul li {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #474747;
+}
+
+.comment-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #2b0d85;
+    padding: 10px;
+
+}
+
+.comments-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.comment-card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.comment-card:hover {
+    transform: scale(1.05);
+}
+
+.comment-card img {
+    width: 90%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+
+
+}
+
+.comment-card button {
+    background-color: #ffffff;
+    color: #EE7B10;
+    border: #EE7B10 2px solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-card button:hover {
+    background-color: #d33f9a;
+}
+*/
+
+footer {
+    background-color: var(--black-two-color);
+    color: white;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-logo p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-social i {
+    color: #ffff;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.footer-social ul li a i {
+    font-size: 32px;
+}
+
+.footer-social ul li a i:hover {
+    color: var(--primary-color);
+}
+
+.footer-navigator ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-navigator ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer-navigator ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+.footer-navigator h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-contact ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer-contact ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+.footer-contact h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 933px) {
+    header nav ul {
+        font-size: 0.9rem;
+        gap: 15px;
+    }
+
+    .hero-container {
+        padding-top: 45%;
+        padding-bottom: 45%;
+    }
+
+    .hero-text-content p {
+        font-size: 15px;
+    }
+
+    .hero-text-content h1 {
+        font-size: 38px;
+    }
+
+    #hero-section {
+        background-position: center;
+    }
+
+    .property-type-item img {
+        width: 36%;
+    }
+
+    .property-type-text {
+        width: 100%;
+    }
+
+    .property-type-item {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .property-type-item button {
+        margin-top: 100px;
+    }
+
+    .property-type-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .comments-title h1 {
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .menu-button {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        width: 100vw;
+        background-color: #EE7B10;
+        transform: scaleY(0);
+        transform-origin: top;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease-in-out;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    #menu.show {
+        display: block;
+        transform: scaleY(1);
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .locations-items-container {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px);
+        grid-gap: 50px;
+        grid-template-areas:
+            "lima"
+            "arequipa"
+            "piura"
+            "cusco"
+    }
+
+    .item-text-content button {
+        width: 100px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-text-content,
+    .team-image-content {
+        width: 90%;
+    }
+
+    .team-text-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-text-content h1 {
+        text-align: center;
+    }
+
+    .team-text-content button {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 344px) {
+    .properties-cards-container {
+        padding: 10px;
+        margin: 0 8px;
+    }
+
+    .hero-text-content h1 {
+        font-size: 32px;
+    }
+}

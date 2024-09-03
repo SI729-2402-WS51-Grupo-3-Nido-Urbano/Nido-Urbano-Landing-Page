@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/index.css">
+    <link rel="stylesheet" href="/public/styles/help-center.css">
+    <link href="/public/styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>UrbanNest</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/public/img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
+            <nav>
+                <div class="menu-button">
+                    <button class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <ul id="menu">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/public/about-us.html">Sobre</a></li>
+                    <li><a href="/public/contact-page.html">Contacto</a></li>
+                    <li><a href="help-center.html">Centro de Ayuda</a></li>
+                    <li><a href="https://micasita-frontend.web.app/" class="underline-link"> Registrar</a></li>
+                    <li><a href="https://micasita-frontend.web.app/" class="access-button"> Acceder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="help-center-section">
+        <div class="help-center-container">
+            <div class="help-center-text-content">
+                <h1>Preguntas Frecuentes</h1>
+                <p>¡Bienvenido a UrbanNest! Estamos aquí para brindarte toda la información que necesitas para hacer que
+                    tu experiencia de búsqueda de vivienda sea lo más fácil y satisfactoria posible. A continuación,
+                    encontrarás una serie de preguntas frecuentes que hemos recopilado para ayudarte a comprender mejor
+                    cómo funciona nuestra plataforma y cómo puede beneficiarte en tu búsqueda de hogar.</p>
+            </div>
+
+            <div class="help-center-questions">
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>¿Cómo puedo empezar a buscar propiedades en UrbanNest?</h3>
+                    <p>Para empezar a buscar propiedades en UrbanNest, simplemente visita nuestra página web <a
+                            href="https://micasita-frontend.web.app/"
+                            target="_blank">https://micasita-frontend.web.app/</a>
+                    </p>
+                    <button class="toggle-button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>¿Qué tipo de propiedades puedo encontrar en UrbanNest?¿Hay opciones para alquilar y comprar?
+                    </h3>
+                    <p>Para contactar a un vendedor, debes acceder al anuncio que te interesa y hacer clic en el
+                        botón de
+                        contacto. Asegúrate de estar registrado en nuestra plataforma para poder contactar a los
+                        vendedores.</p>
+                    <button class="toggle-button"><i class="fas fa-chevron-right"></i></button>
+
+                </div>
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>¿Qué debo hacer si encuentro un problema técnico mientras uso la plataforma?</h3>
+                    <p>Para solicitar asistencia, puedes contactarnos a través de nuestro correo electrónico o
+                        número de
+                        teléfono. También puedes visitar nuestra oficina en horario de atención al cliente.</p>
+                    <button class="toggle-button"><i class="fas fa-chevron-right"></i></button>
+
+                </div>
+                <div class="question" onclick="toggleAnswer(this)">
+                    <h3>¿Ofrecen servicios adicionales, como asesoramiento legal o financiero para la compra de una
+                        propiedad?</h3>
+                    <p>Para solicitar asistencia, puedes contactarnos a través de nuestro correo electrónico o
+                        número de
+                        teléfono. También puedes visitar nuestra oficina en horario de atención al cliente.</p>
+                    <button class="toggle-button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" style="display: none; position: fixed; width: 300px; height: 300px; background: #EBE7F3;border-radius: 10px ;z-index: 1000; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <button id="close" style="position: absolute; top: 10px; right: 10px; background: none; border: none;">&times;</button>
+            <img src="/public/img/contactimage.jpg" alt="Imagen" style="width: 200px; height: auto;">
+            <p>Regístrate en mi casita para saber más</p>
+        </div>
+
+    </section>
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/public/img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
+                <p style="color:white; text-align: justify;">Encuentra tu hogar ideal</p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-navigator">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/public/about-us.html">Sobre</a></li>
+                    <li><a href="/public/contact-page.html">Contacto</a></li>
+                    <li><a href="/public/help-center.html">Centro de Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><a href="#">Correo</a></li>
+                    <li><a href="#">Teléfono</a></li>
+                    <li><a href="#">Dirección</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/public/scripts/script.js"></script>
+    <script>
+        function toggleAnswer(element) {
+            const p = element.querySelector('p');
+            const button = element.querySelector('.toggle-button');
+            p.classList.toggle('show');
+            button.classList.toggle('down');
+        }
+    </script>
+</body>
+
+</html>

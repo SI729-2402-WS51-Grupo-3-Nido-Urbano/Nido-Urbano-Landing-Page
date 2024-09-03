@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/index.css">
+    <link href="/public/styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>UrbanNest</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/public/img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
+            <nav>
+                <div class="menu-button">
+                    <button class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <ul id="menu">
+                    <li><a href=#>Inicio</a></li>
+                    <li><a href="/public/about-us.html">Sobre</a></li>
+                    <li><a href="/public/contact-page.html">Contacto</a></li>
+                    <li><a href="/public/help-center.html">Centro de Ayuda</a></li>
+                    <li><a href="https://micasita-frontend.web.app/" class="underline-link"> Registrarse</a></li>
+                    <li><a href="https://micasita-frontend.web.app/" class="access-button"> Acceder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero-section">
+        <div class="hero-container">
+            <div class="hero-text-content">
+                <div class="text-title">
+                    <p>TU HOGAR, TU CASA DE ESTUDIOS</p>
+                </div>
+                <h1>¡NO PIERDAS TIEMPO BUSCANDO,</h1>
+                <h1>TU NUEVO HOGAR ESTÁ A UN CLIC DE DISTANCIA!</h1>
+                <div class="text-description">
+                    <p>NOSOTROS NOS ENCARGAMOS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="properties-section">
+        <div class="properties-container">
+            <div class="properties-title-container">
+                <h1>Viviendas</h1>
+            </div>
+            <div class="properties-cards-container">
+                <div class="property">
+                    <img src="https://img10.naventcdn.com/avisos/resize/111/01/43/22/82/51/1200x1200/1452989049.jpg?isFirstImage=true"
+                        alt="property">
+                    <h3>Casa de 2 pisos - Urb. Islas del Sol, La Molina</h3>
+                    <div class="property-details">
+                        <ul>
+                            <li>
+                                <p>Cuartos</p>
+                                <div class="info-property">
+                                    <p>1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Tamaño</p>
+                                <div class="info-property">
+                                    <p>70m2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Universidad</p>
+                                <div class="info-property">
+                                    <p>UPC</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="property-price">
+                        <p>Precio</p>
+                        <p class="value">S/650</p>
+                    </div>
+                    <div class="button-view-details">
+                        <button>VER MÁS</button>
+                    </div>
+                </div>
+                <div class="property">
+                    <img src="https://img10.naventcdn.com/avisos/resize/111/01/42/76/75/54/1200x1200/1440505603.jpg?isFirstImage=true"
+                        alt="property">
+                    <h3>Casa de 3 pisos - Surco límite con La Molina</h3>
+                    <div class="property-details">
+                        <ul>
+                            <li>
+                                <p>Cuartos</p>
+                                <div class="info-property">
+                                    <p>1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Tamaño</p>
+                                <div class="info-property">
+                                    <p>70m2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Universidad</p>
+                                <div class="info-property">
+                                    <p>UPC</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="property-price">
+                        <p>Precio</p>
+                        <p class="value">S/900</p>
+                    </div>
+                    <div class="button-view-details">
+                        <button>VER MÁS</button>
+                    </div>
+                </div>
+                <div class="property">
+                    <img src="https://img10.naventcdn.com/avisos/resize/111/01/43/09/35/78/1200x1200/1449411420.jpg?isFirstImage=true"
+                        alt="property">
+                    <h3>Casa de 2 pisos - Surco límite con Miraflores</h3>
+                    <div class="property-details">
+                        <ul>
+                            <li>
+                                <p>Cuartos</p>
+                                <div class="info-property">
+                                    <p>1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Tamaño</p>
+                                <div class="info-property">
+                                    <p>70m2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Universidad</p>
+                                <div class="info-property">
+                                    <p>UPC</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="property-price">
+                        <p>Precio</p>
+                        <p class="value">S/98,000</p>
+                    </div>
+                    <div class="button-view-details">
+                        <button>VER MÁS</button>
+                    </div>
+                </div>
+                <div class="property">
+                    <img src="https://img10.naventcdn.com/avisos/resize/111/01/42/90/53/55/1200x1200/1444551707.jpg?isFirstImage=true"
+                        alt="property">
+                    <h3>Casa de 2 pisos - Chacarilla, Surco.</h3>
+                    <div class="property-details">
+                        <ul>
+                            <li>
+                                <p>Cuartos</p>
+                                <div class="info-property">
+                                    <p>1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Tamaño</p>
+                                <div class="info-property">
+                                    <p>70m2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Universidad</p>
+                                <div class="info-property">
+                                    <p>UPC</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="property-price">
+                        <p>Precio</p>
+                        <p class="value">S/200,000</p>
+                    </div>
+                    <div class="button-view-details">
+                        <button>VER MÁS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="property-type-section">
+        <div class="property-type-container">
+            <div class="property-type-text">
+                <h1>Encuentra tu cuarto ideal</h1>
+                <p>Busca tu cuarto en el lugar que gustes, sin complicación y sin perdida de tiempo.</p>
+            </div>
+            <div class="property-type-cards">
+                <div class="property-type-item">
+                    <img src="https://www.revistaeconomia.com/wp-content/uploads/2023/05/Lima-Top.jpeg"
+                        alt="property-type1">
+                    <h3>Todas</h3>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="property-type-item">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//partner-images/f0/d6/2c7c340df793656c9c81956cd0f4235ca6de90dc02222cdc4dd4393dbed1.jpeg"
+                        alt="property-type2">
+                    <h3>Residencial</h3>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="property-type-item">
+                    <img src="https://www.grupo-sanjose.com/data/foto/gran_1437560436_1383037103.jpg"
+                        alt="property-type3">
+                    <h3>Condominio</h3>
+                    <button>VER MÁS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations-section">
+        <div class="locations-container">
+            <div class="location-title-content">
+                <h1>Encuentranos en las siguientes regiones</h1>
+            </div>
+            <div class="locations-items-container">
+                <div class="location-item" id="lima">
+                    <div class="item-text-content">
+                        <h3>Lima, Peru</h3>
+                        <button>8 casas</button>
+                    </div>
+                </div>
+                <div class="location-item" id="piura">
+                    <div class="item-text-content">
+                        <h3>Piura, Peru</h3>
+                        <button>7 casas</button>
+                    </div>
+                </div>
+                <div class="location-item" id="cusco">
+                    <div class="item-text-content">
+                        <h3>Cusco, Peru</h3>
+                        <button>24 casas</button>
+                    </div>
+                </div>
+                <div class="location-item" id="arequipa">
+                    <div class="item-text-content">
+                        <h3>Arequipa, Peru</h3>
+                        <button>15 casas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="location-title-content">
+                <h1>Y muchas más</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-section">
+        <div class="team-container">
+            <div class="team-text-content">
+                <h1>Quienes Somos</h1>
+                <p>Somos una plataforma con la misión de proporcionar una experiencia <br> 
+                    integral y personalizada en la búsqueda de viviendas para <br>
+                    alquiler o compra. Nos dedicamos a hacer que este proceso <br>
+                    sea fácil, seguro y eficiente para todos nuestros usuarios.
+                </p>
+                <a href="/public/about-us.html"><button>VER MÁS</button></a>
+            </div>
+            <div class="team-image-content">
+                <iframe width="600" height="320" 
+                src="https://www.youtube.com/embed/gObeTfUrfwg?si=GchqTG7fuVbo1wNR" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+                </iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--
+    <section id="data-section">
+        <div class="data-container">
+            <div class="data-text-content">
+                <h1>Tenemos el compromiso que su ciclo universitario sea agradable</h1>
+                <h1>y seguro. NUESTRA PRIORIDAD ES USTED</h1>
+            </div>
+            <div class="data-cards-container">
+                <div class="data-card">
+                    <h3>35+</h3>
+                    <p>CASAS PARA ESTUDIANTES</p>
+                </div>
+                <div class="data-card">
+                    <h3>10+</h3>
+                    <p>UNIVERSIDADES CERCA</p>
+                </div>
+                <div class="data-card">
+                    <h3>120+</h3>
+                    <p>ALUMNOS FELICES</p>
+                </div>
+                <div class="data-card">
+                    <h3>250+</h3>
+                    <p>CUARTOS ALQUILADOS</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!--
+    <section id="comments-section">
+        <div class="comments-container">
+            <div class="comments-title">
+                <h1>Comentarios</h1>
+            </div>
+            <div class="comments-cards-container">
+                <div class="comment-card">
+                    <img src="https://img.properati.com/eyJidWNrZXQiOiJwcmQtbGlmdWxsY29ubmVjdC1wcm9qZWN0cy1hZG1pbi1pbWFnZXMiLCJrZXkiOiIxMTc3YTFkNi1iY2Q1LTRkOGUtYTMxMi01YTE3OWM5ZmU5ZWMvMTE3N2ExZDYtYmNkNS00ZDhlLWEzMTItNWExNzljOWZlOWVjX2M0MjZmNWRiLTBjNTYtNDY5OC05YzM2LWM5MmVlOGFhMmZkMi5qcGciLCJicmFuZCI6IlBST1BFUkFUSSIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjQwLCJoZWlnaHQiOjQ4MCwiZml0IjoiY292ZXIifX19"
+                        alt="comment1">
+                    <h3>"Cuarto bien espacioso"</h3>
+                    <ul>
+                        <li>Data: 27/06/2023</li>
+                        <li>Dueño: Vilma</li>
+                    </ul>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="comment-card">
+                    <img src="https://www.upc.edu.pe/nosotros/campus/campus-monterrico/img/monterrico-6.jpg"
+                        alt="comment1">
+                    <h3>"Cerca a mi Universidad"</h3>
+                    <ul>
+                        <li>Data: 27/06/2023</li>
+                        <li>Autor: Hanna</li>
+                    </ul>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="comment-card">
+                    <img src="https://costanera-lima-pe-lima-1-1.booked.net/data/Photos/OriginalPhoto/14041/1404138/1404138965/Habitacion-Con-Bano-Privado-Y-Desayuno-En-Santa-Beatriz-Avenida-Arequipa-Lima-Exterior.JPEG"
+                        alt="comment1">
+                    <h3>"Vecindario seguro"</h3>
+                    <ul>
+                        <li>Data: 27/06/2023</li>
+                        <li>Autor: Hanna</li>
+                    </ul>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="comment-card">
+                    <img src="https://img10.naventcdn.com/avisos/11/01/42/49/16/13/720x532/1407694736.jpg?isFirstImage=true"
+                        alt="comment1">
+                    <h3>"Cerca a la terminal"</h3>
+                    <ul>
+                        <li>Data: 27/06/2023</li>
+                        <li>Autor: Camila</li>
+                    </ul>
+                    <button>VER MÁS</button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/public/img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
+                <p>Encuentra tu hogar ideal</p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="#"><i class="bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-navigator">
+                <h3>NAVEGACION</h3>
+                <ul>
+                    <li><a href=#>Inicio</a></li>
+                    <li><a href="/public/about-us.html">Sobre</a></li>
+                    <li><a href="/public/contact-page.html">Contacto</a></li>
+                    <li><a href="/public/help-center.html">Centro de Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><a href=#>Correo</a></li>
+                    <li><a href=#>Telefono</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/public/scripts/script.js"></script>
+</body>
+
+</html>
