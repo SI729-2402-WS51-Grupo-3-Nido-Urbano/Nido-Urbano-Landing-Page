@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/styles/index.css">
-    <link rel="stylesheet" href="public/styles/help-center.css">
-    <link href="public/styles/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/help-center.css">
+    <link href="./styles/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>UrbanNest</title>
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="public/img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
+            <img src="./img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
             <nav>
                 <div class="menu-button">
                     <button class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
@@ -26,8 +26,8 @@
                 </div>
                 <ul id="menu">
                     <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="public/about-us.html">Sobre</a></li>
-                    <li><a href="public/contact-page.html">Contacto</a></li>
+                    <li><a href="./about-us.html">Sobre</a></li>
+                    <li><a href="./contact-page.html">Contacto</a></li>
                     <li><a href="help-center.html">Centro de Ayuda</a></li>
                     <li><a href="https://micasita-frontend.web.app/" class="underline-link"> Registrar</a></li>
                     <li><a href="https://micasita-frontend.web.app/" class="access-button"> Acceder</a></li>
@@ -85,7 +85,7 @@
 
         <div id="popup" style="display: none; position: fixed; width: 300px; height: 300px; background: #EBE7F3;border-radius: 10px ;z-index: 1000; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
             <button id="close" style="position: absolute; top: 10px; right: 10px; background: none; border: none;">&times;</button>
-            <img src="public/img/contactimage.jpg" alt="Imagen" style="width: 200px; height: auto;">
+            <img src="./img/contactimage.jpg" alt="Imagen" style="width: 200px; height: auto;">
             <p>Regístrate en mi casita para saber más</p>
         </div>
 
@@ -93,7 +93,7 @@
     <footer class="footer-section">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="public/img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
+                <img src="./img/nidourbanobg-icon.png" alt="NidoUrbano" class="logo" draggable="false">
                 <p style="color:white; text-align: justify;">Encuentra tu hogar ideal</p>
             </div>
             <div class="footer-social">
@@ -108,9 +108,9 @@
                 <h3>NAVEGACIÓN</h3>
                 <ul>
                     <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="public/about-us.html">Sobre</a></li>
-                    <li><a href="public/contact-page.html">Contacto</a></li>
-                    <li><a href="public/help-center.html">Centro de Ayuda</a></li>
+                    <li><a href="./about-us.html">Sobre</a></li>
+                    <li><a href="./contact-page.html">Contacto</a></li>
+                    <li><a href="./help-center.html">Centro de Ayuda</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
@@ -123,7 +123,7 @@
             </div>
         </div>
     </footer>
-    <script src="public/scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
     <script>
         function toggleAnswer(element) {
             const p = element.querySelector('p');
