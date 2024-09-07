@@ -88,13 +88,19 @@ header nav ul li a:hover {
     background-color: var(--black-two-color);
 }
 
+#access-button-2 {
+    margin-top: 1.5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
 
 .menu-button {
     display: none;
 }
 
 #hero-section {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('../img/banner.png');
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('../img/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
