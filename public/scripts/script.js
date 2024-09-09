@@ -41,3 +41,13 @@ window.onload = function () {
         popup.style.display = 'none';
     };
 };
+
+function mostrarAdvertencia() {
+    let respuesta = confirm("Esta sección aún se encuentra en desarrollo");
+    /*
+    if (respuesta) {
+        console.log("El usuario eligió continuar.");
+    } else {
+        console.log("El usuario canceló la acción.");
+    }*/
+}
