@@ -491,6 +491,7 @@ header nav ul li a:hover {
 
 #team-section {
     background-color: #ebe7f3;
+    padding-bottom: 40px;
 }
 
 .team-container {
@@ -498,7 +499,6 @@ header nav ul li a:hover {
     margin: 0 auto;
     position: relative;
     padding-top: 80px;
-    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -555,12 +555,41 @@ header nav ul li a:hover {
     color: var(--primary-color);
 }
 
-/*
+.social {
+    padding-top: 40px;
+}
+
+.social i {
+    color: black;
+    display: inline-block; /* Añadir esto para permitir transformaciones */
+}
+
+.social ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    padding: 0;
+    gap: 42.5px;
+}
+
+.social ul li a i {
+    font-size: 35px;
+    transition: transform 0.75s ease; /* Añadir transición de color también */
+}
+
+.social ul li a i:hover {
+    transform: scale(1.5); /* Efecto de escala al hacer hover */
+}
+
+
+
+/**/
 #data-section {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://farm5.staticflickr.com/4520/38848167192_88693dc009_h.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 50px;
 }
 
 .data-container {
@@ -628,9 +657,8 @@ header nav ul li a:hover {
     color: #1b1b1b;
     margin: 10px 5px;
 }
-*/
 
-/*
+
 #comments-section {
     background-color: #ebe7f3;
 }
@@ -639,20 +667,20 @@ header nav ul li a:hover {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 120px;
 }
 
 .comments-title {
     padding: 2px 0;
-    color: #EE7B10;
+    color: var(--primary-color);
     font-size: 2rem;
 }
 
 .comments-title h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    padding: 10px
+    text-align: center;
 }
 
 .comment-card ul {
@@ -729,9 +757,8 @@ header nav ul li a:hover {
 }
 
 .comment-card button:hover {
-    background-color: #d33f9a;
+    background-color: var(--black-two-color);
 }
-*/
 
 footer {
     background-color: var(--black-two-color);

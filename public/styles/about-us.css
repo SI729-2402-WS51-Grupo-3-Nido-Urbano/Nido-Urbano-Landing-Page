@@ -11,18 +11,24 @@ body {
 }
 
 .about-us-container {
-    padding: 12vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    width: 100vw;
 }
 
 .about-us-container h1 {
     font-size: 50px;
     color: white;
-    font-weight: 600;
+    width: auto;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
+.team-text-content p {
+    padding-bottom: 20px;
+}
 
+/* values section */
 
 #values-section {
     background-color: var(--black-two-color);
@@ -112,4 +118,91 @@ body {
     width: 70vw;
     height: 50vh;
     object-fit: cover;
+}
+
+/* About the team section */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: white;
+    color: #fff;
+}
+
+#about-the-team {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-the-team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 80%; /* Reducir el ancho para que solo entren 3 cards */
+    margin: auto;
+    padding-top: 2.5%;
+    padding-bottom: 10%;
+    transition: transform 0.5s ease-in-out; /* Transición suave al mover las cards */
+}
+
+.developers-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease; /* Añadir una animación ligera en hover */
+}
+
+.developers-card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón sobre la card */
+}
+
+.developers-card img {
+    width: 170px; /* Aumentar tamaño de imagen */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #00aced;
+}
+
+.developers-card .name {
+    font-size: 1.3750rem; /* Aumentar tamaño del nombre */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.developers-card .description {
+    font-size: 1rem; /* Aumentar tamaño de la descripción */
+    color: #ccc;
+    text-align: center;
+}
+
+.about-the-team-container .developers-card {
+    margin: 0 10px;
+}
+
+@media screen and (max-width:1000px){
+    .developers-card .description {
+        display: none;
+    }
+    .about-the-team-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Cada tarjeta ocupará una columna completa */
+        justify-items: center; /* Opcional: Centra las tarjetas dentro de cada columna */
+    }
 }
